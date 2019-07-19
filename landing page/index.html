@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Plano de Saúde Individual e Familiar até 30% Mais Barato. Aqui!</title>
+    
+    <!-- css bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/stylle.css">
+    <link rel="icon" type="image/png" href="img/icone.png" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" width="172" height="51" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto-2">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#comofunciona">Como funciona?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vantagens">Vantagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#operadoras">Operadoras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning btn-lg" href="#simule">Simule agora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="mt-3">
+        <div class="contactus-1 bglayout d-flex align-items-center">
+            <div class="netbg"></div>
+            <div id="leftHalf"></div>
+            <div class="d-flex justify-content-around align-items-center flex-wrap container-hero m-auto" id="simule">
+                <div class="col-md-4 col-net">
+                    <div class="col-md-12">
+                        <h2 class="h3 title mb-1">Faça uma simulação de</h2>
+                        <h1 class="h1principal mb-0" data-text="Plano de saúde">Plano de saúde</h1>
+                        <h2 class="h3 title mb-1 pt-0">Para você, sua família ou empresa</h2>
+                        <p class="destaque mt-2 mb-2">Economize até 30% em um novo plano</p>
+                        <img src="img/logos.png" alt="logos">
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-form" id="formview">
+                    <div class="card card-contact card-raised mt-5">
+                        <form action="?" method="POST" class="registration-form fv-form fv-form-bootstrap4" id="contactForm" novalidate="novalidate">
+                            <fieldset class="fieldsetPasso1" id="fieldsetPasso1">
+                                <div class="card-header text-center">
+                                    <h5 class="card-title mt-4 mb-2">
+                                        Solicite sua cotação em menos de 1 minuto
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group input-lg mb-4 fv-has-feedback">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">
+                                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control input-t" placeholder="Informe seu cep" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="radiobox">
+                                        <h5 class="mb-1">Possui CNPJ/MEI?</h5>
+                                        <div class="btn-group btn-block radioselect" data-toggle="buttons">
+                                            <label for="" class="btn btn-primary btn-block classCpnj active">
+                                                <input data-fv-notempty="true" data-fv-notempty-message="Campo obrigatório" type="radio" name="bitCnpj" id="option1" value="1" data-fv-field="bitCnpj">
+                                                <i class="fa fa-check" aria-hidden="true"></i> Sim
+                                            </label>
+                                            <label for="" class="btn btn-primary btn-block classCpnj">
+                                                    <input type="radio" name="bitCnpj" id="option2" value="0" data-fv-field="bitCnpj">
+                                                    <i class="fa fa-times" aria-hidden="true"></i> Não
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="radiobox">
+                                        <h5 class="mb-1">Para quantas pessoas é a cotação?</h5>
+                                        <div class="btn-group btn-block radioselect classNumPessoas" data-toggle="buttons">
+                                            <label for="" class="btn btn-primary btn-block">
+                                                <input type="radio" name="intNumeroPessoas" class="form-control" value="1" id="option1" data-fv-field="intNumeroPessoas"> 1
+                                            </label>
+                                            <label for="" class="btn btn-primary btn-block">
+                                                    <input type="radio" name="intNumeroPessoas" class="form-control" value="2" id="option2" data-fv-field="intNumeroPessoas"> 2
+                                            </label>
+                                            <label for="" class="btn btn-primary btn-block active">
+                                                    <input type="radio" name="intNumeroPessoas" class="form-control" value="3" id="option3" data-fv-field="intNumeroPessoas"> 3
+                                            </label>
+                                            <label for="" class="btn btn-primary btn-block">
+                                                    <input type="radio" name="intNumeroPessoas" class="form-control" value="4 ou Mais" id="option4" data-fv-field="intNumeroPessoas"> 
+                                                    4 <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="radiobox">
+                                        <h5 class="mb-1">Como quer receber sua cotação?</h5>
+                                        <div class="btn-group btn-block radioselect classContato" data-toggle="buttons">
+                                                <label for="" class="btn btn-primary btn-block active">
+                                                        <input type="checkbox" name="strMetodoContato[]" class="form-control" value="WhatsApp" id="option2" data-fv-field="strMetodoContato[]">
+                                                        <img src="img/zap.png"  alt="" class="img-zap"> 
+                                                </label>
+                                                <label for="" class="btn btn-primary btn-block">
+                                                        <input type="checkbox" name="strMetodoContato[]" class="form-control" value="E-mail" id="option3" data-fv-field="strMetodoContato[]">
+                                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                </label>
+                                                <label for="" class="btn btn-primary btn-block">
+                                                        <input data-fv-notempty="true" data-fv-notempty-message="Campo obrigatório" class="form-control" value="Telefone" type="checkbox" name="strMetodoContato[]" id="option1" data-fv-field="strMetodoContato[]">
+                                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                                </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning btn-block btn-lg btn-form">Receber cotação</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="features-6 pb-0" id="comofunciona">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="title m-0 bluetext">Veja como funciona a cotação</h2>
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="info info-hover">
+                                    <div class="step">
+                                        <img src="img/adapters_saude1.png" alt="" class="img img-raised lazy initial loaded" data-was-processed="true">
+                                        <i class="fa fa-arrow-right fa-w-14 fa-2x" aria-hidden="true"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></i>
+                                    </div>
+                                    <h4 class="info-title">Preencha o formulário</h4>
+                                    <h5>Encontraremos uma opção indicada ao seu perfil!</h5>
+                                    <a href="#formview" class="btn btn-primary btn-simple back-2">Simule online</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="info info-hover">
+                                    <div class="step">
+                                        <img src="img/adapters_saude2.png" alt="" class="img img-raised lazy initial loaded" data-was-processed="true">
+                                        <i class="fa fa-arrow-right fa-w-14 fa-2x" aria-hidden="true"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></i>
+                                    </div>
+                                    <h4 class="info-title">Análise da equipe</h4>
+                                    <h5>Nossa equipe encontrará um corretor com os melhores planos para sua localização</h5>
+                                    <a href="#formview" class="btn btn-primary btn-simple back-2">Simule online</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="info info-hover">
+                                    <div class="step">
+                                        <img src="img/adapters_saude3.png" alt="" class="img img-raised lazy initial loaded" data-was-processed="true">
+                                        <i class="fa fa-arrow-right fa-w-14 fa-2x" aria-hidden="true"><path fill="currentColor" d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></i>
+                                    </div>
+                                    <h4 class="info-title">Contato em até 24 horas</h4>
+                                    <h5>Uma equipe preparada entrará em contato para te ajudar a escolher a melhor opção</h5>
+                                    <a href="#formview" class="btn btn-primary btn-simple back-2">Simule online</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3">
+                                <div class="info info-hover">
+                                    <div class="step">
+                                        <img src="img/adapters_saude4.png" alt="" class="img img-raised lazy initial loaded" data-was-processed="true">
+                                    </div>
+                                    <h4 class="info-title">Pronto!</h4>
+                                    <h5>Pronto! Você economizou tempo e dinheiro fechando o melhor negócio.</h5>
+                                    <a href="#formview" class="btn btn-primary btn-simple back-2">Simule online</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-4 bg-wg pt-0" id="vantagens">
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title m-0 bluetext">Confira Nossas Vantagens</h2>
+                    <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="info info-hover text-center">
+                        <div class="icon icon-primary">
+                            <div class="pseicon">
+                                <i class="fa fa-piggy-bank fa-w-18 fa-3x dois"></i>
+                            </div>
+                        </div>
+                        <h4 class="info-title">Acesso a preços mais baratos</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info info-hover text-center">
+                        <div class="icon icon-primary">
+                            <div class="pseicon">
+                                <i class="fa fa-sitemap fa-w-18 fa-3x tres"></i>
+                            </div>
+                        </div>
+                        <h4 class="info-title">As maiores redes credenciadas do Brasil</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info info-hover text-center">
+                        <div class="icon icon-primary">
+                            <div class="pseicon">
+                                <i class="fa fa-hospital fa-w-18 fa-3x quatro"></i>
+                            </div>
+                        </div>
+                        <h4 class="info-title">Hospitais, clínicas e laboratórios de primeiro mundo</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info info-hover text-center">
+                        <div class="icon icon-primary">
+                            <div class="pseicon">
+                                <i class="fa fa-star-half-alt fa-w-18 fa-3x cinco"></i>
+                            </div>
+                        </div>
+                        <h4 class="info-title">Opções de planos com co-participação</h4>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="info info-hover text-center">
+                        <div class="icon icon-primary">
+                            <div class="pseicon">
+                                <i class="fa fa-globe-americas fa-w-18 fa-3x seis"></i>
+                            </div>
+                        </div>
+                        <h4 class="info-title">Cote online sem sair de casa!</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-operadoras pt-3" id="operadoras">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="h3 title m-0 pb-4 text-white">Plano de Saúde para todos os perfis de clientes</h2>
+                </div>
+            </div>
+            <div class="row mt-5 pt-2 modalidades">
+                <div class="col-md-4">
+                    <div class="card card-raised">
+                        <div class="info">
+                            <div class="icon icon-primary">
+                                    <i class="fa fa-user fa-w-14 fa-3x"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">
+                                        Plano de Saúde Individual
+                                </h4>
+                                <a href="#simule" class=" btn btn-form addglow">Simular Planos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-raised">
+                        <div class="info">
+                            <div class="icon icon-primary">
+                                    <i class="fa fa-heart fa-w-14 fa-3x"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">
+                                        Plano de Saúde Familiar
+                                </h4>
+                                <a href="#simule" class=" btn btn-form addglow">Simular Planos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-raised">
+                        <div class="info">
+                            <div class="icon icon-primary">
+                                    <i class="fa fa-building fa-w-14 fa-3x"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">
+                                        Plano de Saúde Empresarial
+                                </h4>
+                                <a href="#simule" class=" btn btn-form addglow">Simular Planos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-raised">
+                        <div class="info">
+                            <div class="icon icon-primary">
+                                    <i class="fa fa-user fa-w-14 fa-3x"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">
+                                        Plano de Saúde Individual
+                                </h4>
+                                <a href="#simule" class=" btn btn-form addglow">Simular Planos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-raised">
+                        <div class="info">
+                            <div class="icon icon-primary">
+                                    <i class="fa fa-child fa-w-14 fa-3x"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">
+                                        Plano de Saúde Infantil
+                                </h4>
+                                <a href="#simule" class=" btn btn-form addglow">Simular Planos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-raised">
+                        <div class="info">
+                            <div class="icon icon-primary">
+                                    <i class="fa fa-star-half-alt fa-w-14 fa-3x"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">
+                                        Plano de Saúde Co-Participativo
+                                </h4>
+                                <a href="#simule" class=" btn btn-form addglow">Simular Planos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-wg features-4">
+        <h2 class="text-center">OPERADORAS</h2>
+        <h5 class="text-center">Trabalhamos com as mais conceituadas operadoras de Plano de Saúde do mercado.</h5>
+        <div class="d-flex flex-wrap align-items-center justify-content-center text-center list-style-none">
+            <br><br>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Plano de Saúde Affix</li>
+                    <li>Plano de Saúde Ameplan</li>
+                    <li>Plano de Saúde Assim Saúde</li>
+                    <li>Plano de Saúde Blue Med</li>
+                    <li>Plano de Saúde Care Plus</li>
+                    <li>Plano de Saúde Cemeru</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="text-center" style="margin-top:30px">LOCALIDADES</h2>
+        <div class="d-flex flex-wrap align-items-center justify-content-center text-center list-style-none">
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Tabela de preços de planos de saúde do Acre</li>
+                    <li>Tabela de preços de planos de saúde de Alagoas</li>
+                    <li>Tabela de preços de planos de saúde do Amapá</li>
+                    <li>Tabela de preços de planos de saúde do Amazonas</li>
+                    <li>Tabela de preços de planos de saúde da Bahia</li>
+                    <li>Tabela de preços de planos de saúde do Ceará</li>
+                    <li>Tabela de preços de planos de saúde do Distrito Federal</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Tabela de preços de planos de saúde do Acre</li>
+                    <li>Tabela de preços de planos de saúde de Alagoas</li>
+                    <li>Tabela de preços de planos de saúde do Amapá</li>
+                    <li>Tabela de preços de planos de saúde do Amazonas</li>
+                    <li>Tabela de preços de planos de saúde da Bahia</li>
+                    <li>Tabela de preços de planos de saúde do Ceará</li>
+                    <li>Tabela de preços de planos de saúde do Distrito Federal</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Tabela de preços de planos de saúde do Acre</li>
+                    <li>Tabela de preços de planos de saúde de Alagoas</li>
+                    <li>Tabela de preços de planos de saúde do Amapá</li>
+                    <li>Tabela de preços de planos de saúde do Amazonas</li>
+                    <li>Tabela de preços de planos de saúde da Bahia</li>
+                    <li>Tabela de preços de planos de saúde do Ceará</li>
+                    <li>Tabela de preços de planos de saúde do Distrito Federal</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3">
+                <ul>
+                    <li>Tabela de preços de planos de saúde do Acre</li>
+                    <li>Tabela de preços de planos de saúde de Alagoas</li>
+                    <li>Tabela de preços de planos de saúde do Amapá</li>
+                    <li>Tabela de preços de planos de saúde do Amazonas</li>
+                    <li>Tabela de preços de planos de saúde da Bahia</li>
+                    <li>Tabela de preços de planos de saúde do Ceará</li>
+                    <li>Tabela de preços de planos de saúde do Distrito Federal</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                
+            </div>
+        </div>
+    </div>
+    <!-- js bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+<!--referencia - https://www.cotecompare.net/lp/plano-de-saude-1093/2059#comofunciona -->
